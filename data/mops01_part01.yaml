@@ -1,0 +1,343 @@
+vocabulary:
+
+  Tagebuch:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: deník
+        pos: noun
+        gender: masculine
+        examples:
+          - Každý večer si píšu do deníku.
+          - Koupila jsem si novỳ deník.
+      - word: deníčka
+        pos: noun
+        gender: feminine
+        examples:
+          - Ale to ti, milý deníčku, vysvětlím potom.
+
+  Plattenbau/Siedlung:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: sídliště
+        pos: noun
+        gender: neuter
+        examples:
+          - Bydlím na sídlišti blízko centra.
+
+  Ortschaft/Ansiedlung:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: osada
+        pos: noun
+        gender: feminine
+        examples:
+          - Ta osada je jen pár kilometrů od města.
+
+  Durcheinander/Wirrwarr:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: zmatek
+        pos: noun
+        gender: masculine
+        examples:
+          - Na stole mám úplný zmatek.
+          - Jo jo, vím, že je to trošku zmatek.
+
+  ein Bisschen:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: trochu
+        pos: adverb
+        examples:
+          - Potřebuji ještě trochu času.
+      - word: trošku
+        pos: adverb
+        examples:
+          - Jo jo, vím, že je to trošku zmatek.
+          - Jsem trošku unavený.
+
+  aufklären, erklären:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: vysvětlit
+        pos: verb
+        aspect: perfective
+        notes:
+          - Já vysvětlím
+        examples:
+          - Vysvětlím ti to později.
+      - word: vysvětlovat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Já vysvětluju
+        examples:
+          - Učitel právě vysvětluje novou látku.
+
+  Feiertag:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: svátek
+        pos: noun
+        gender: masculine
+        examples:
+          - Dnes je státní svátek.
+
+  man sagt, angeblich:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: prý
+        pos: particle
+        examples:
+          - Prý bude zítra pršet.
+
+  aufzeichnen, aufnehmen:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: zaznamenávat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Já zaznamenávám
+        examples:
+          - Aplikace zaznamenává moje kroky.
+          - Prý si mám zaznamenávat, co se mi děje.
+
+  jedoch:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: jenže
+        pos: conjunction
+        examples:
+          - Chtěl jsem přijít dřív, jenže jsem zaspal.
+          - Jenže mně se toho děje fůra.
+
+  ein Haufen, eine Fuhre:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: fůra
+        pos: noun
+        gender: feminine
+        examples:
+          - Jenže mně se toho děje fůra.
+          - Dnes mám fůru práce.
+
+  protokollieren:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: zapisovat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Já zapisuji
+        examples:
+          - Všechny výdaje si zapisuju do tabulky.
+
+  zusätzlich, über dies:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: navíc
+        pos: adverb
+        examples:
+          - Navíc jsme dostali slevu.
+
+  Zeit:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: čas
+        pos: noun
+        gender: masculine
+        examples:
+          - Nemám na to čas.
+          - Potřebuji moc času.
+      - word: doba
+        pos: noun
+        gender: feminine
+        examples:
+          - Byla to těžká doba.
+
+  Arbeitszeit:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: pracovní doba
+        pos: noun phrase
+        examples:
+          - Naše pracovní doba začíná v osm hodin.
+
+  hoffnungslos, verzweifelt:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: zoufalý
+        pos: adjective
+        examples:
+          - Byl úplně zoufalý.
+          - Jsem zoufalỳ.
+
+  verstaubt, überholt:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: zastaralý
+        pos: adjective
+        examples:
+          - Ten počítač je už zastaralý.
+          - Navíc v době internetu a podcastů je to zoufale zastaralý.
+
+  Chance:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: šance
+        pos: noun
+        gender: feminine
+        examples:
+          - Máš ještě jednu šanci.
+          - Dám tomu šanci.
+
+  führen (Haushalt, Tagebuch,...):
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: vést
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Já vedu
+        examples:
+          - Už několik let vedu deník.
+
+  rühren, ergreifen (emotional):
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: dojímat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Jà dojímám
+        examples:
+          - Ten film mě vždycky dojímá.
+
+  gerührt:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: dojatý
+        pos: adjective
+        examples:
+          - Byl jsem opravdu dojatý.
+
+  weinen, heulen:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: brečet
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Já brečím
+        examples:
+          - Proč brečíš?
+      - word: plakat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Já pláču
+        examples:
+          - Dítě pláče už deset minut.
+
+  zum Weinen bringen:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: rozplakat
+        pos: verb
+        aspect: perfective
+        examples:
+          - Ten dopis mě skoro rozplakal.
+
+  als ob:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: jako že
+        pos: phrase
+        examples:
+          - Tváří se, jako že nic neví.
+
+  Spaß machen (es macht einem Spaß):
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: bavit
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Já bavím
+        examples:
+          - Baví mě učit se česky.
+
+  sich unterhalten, es lustig haben:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: bavit se
+        pos: verb
+        aspect: imperfective
+        notes:
+          - Já se bavím
+        examples:
+          - Na večírku jsme se dobře bavili.
+
+  Schrecken:
+    tags:
+      - mops01
+      - part01
+    translations:
+      - word: hrůza
+        pos: noun
+        gender: feminine
+        examples:
+          - To je hrůza!
