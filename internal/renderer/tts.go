@@ -9,6 +9,9 @@ func PrintTTS(file *model.File) {
 			for _, ex := range t.Examples {
 				// Nur der tschechische Satz
 				println(ex)
+				println("---")
+				println(ex)
+				println("---")
 			}
 		}
 	}
