@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -10,12 +11,19 @@ import (
 )
 
 func main() {
+	// 1. CLI flag definieren
+	format := flag.String("format", "cli", "output format: cli | tts")
+
+	flag.Parse()
+
+	// 2. Daten laden
 	files, err := filepath.Glob("data/*.yaml")
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("error:", err)
 		os.Exit(1)
 	}
 
+	// 3. Dateien verarbeiten
 	for _, file := range files {
 		f, err := loader.Load(file)
 		if err != nil {
@@ -23,6 +31,17 @@ func main() {
 			continue
 		}
 
-		renderer.Print(f)
+		// 4. Renderer auswählen
+		switch *format {
+		case "cli":
+			renderer.PrintCLI(f)
+
+		case "tts":
+			renderer.PrintTTS(f)
+
+		default:
+			fmt.Println("unknown format:", *format)
+			os.Exit(1)
+		}
 	}
 }

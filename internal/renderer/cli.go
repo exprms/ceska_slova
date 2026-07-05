@@ -6,7 +6,7 @@ import (
 	"github.com/exprms/ceska_slova/internal/model"
 )
 
-func Print(file *model.File) {
+func PrintCLI(file *model.File) {
 	for german, entry := range file.Vocabulary {
 		fmt.Println(german)
 
