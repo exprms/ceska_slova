@@ -39,6 +39,9 @@ func main() {
 		case "tts":
 			renderer.PrintTTS(f)
 
+		case "markdown":
+			renderer.PrintMarkdown(f)
+
 		default:
 			fmt.Println("unknown format:", *format)
 			os.Exit(1)
