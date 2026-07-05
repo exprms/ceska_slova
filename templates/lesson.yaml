@@ -1,0 +1,15 @@
+vocabulary:
+
+  # Beispiel
+  #
+  # kochen:
+  #   tags:
+  #     - lesson-7
+  #     - food
+  #   translations:
+  #     - word: vařit
+  #       pos: verb
+  #       aspect: imperfective
+  #       pair: uvařit
+  #       examples:
+  #         - Vařím večeři.

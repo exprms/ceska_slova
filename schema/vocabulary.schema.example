@@ -1,0 +1,24 @@
+vocabulary:
+  <german_word>:
+    tags:
+      - <tag>
+
+    translations:
+      - word: <translated_word>
+        pos: <noun|verb|adjective|adverb|preposition|...>
+
+        gender: <masculine|feminine|neuter>
+        plural: <plural_form>
+
+        aspect: <imperfective|perfective>
+        pair: <aspect_pair>
+
+        comparison:
+          comparative: <comparative_form>
+          superlative: <superlative_form>
+
+        notes:
+          - <note>
+
+        examples:
+          - <example_sentence>

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vocabulary",
+  "type": "object",
+  "properties": {
+    "vocabulary": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/vocabularyEntry"
+      }
+    }
+  },
+  "required": ["vocabulary"],
+  "$defs": {
+    "vocabularyEntry": {
+      "type": "object",
+      "properties": {
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "translations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/translation"
+          }
+        }
+      },
+      "required": ["translations"],
+      "additionalProperties": false
+    },
+
+    "translation": {
+      "type": "object",
+      "properties": {
+        "word": {
+          "type": "string"
+        },
+        "pos": {
+          "enum": [
+            "noun",
+            "verb",
+            "adjective",
+            "adverb",
+            "pronoun",
+            "preposition",
+            "conjunction",
+            "numeral",
+            "particle",
+            "interjection"
+          ]
+        },
+        "gender": {
+          "enum": [
+            "masculine",
+            "feminine",
+            "neuter"
+          ]
+        },
+        "plural": {
+          "type": "string"
+        },
+        "aspect": {
+          "enum": [
+            "imperfective",
+            "perfective"
+          ]
+        },
+        "pair": {
+          "type": "string"
+        },
+        "comparison": {
+          "type": "object",
+          "properties": {
+            "comparative": {
+              "type": "string"
+            },
+            "superlative": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "word",
+        "pos"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

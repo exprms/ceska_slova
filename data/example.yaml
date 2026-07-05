@@ -1,0 +1,48 @@
+vocabulary:
+  Mann:
+    tags:
+      - example
+
+    translations:
+      - word: muž
+        pos: noun
+        gender: masculine
+        plural: muži
+        examples:
+          - Muž čte knihu.
+          - Ten muž je vysoký.
+
+  kochen:
+    tags:
+      - example
+
+    translations:
+      - word: vařit
+        pos: verb
+        aspect: imperfective
+        pair: uvařit
+        examples:
+          - Vařím večeři.
+          - Vaří každý den.
+
+      - word: uvařit
+        pos: verb
+        aspect: perfective
+        pair: vařit
+        examples:
+          - Uvařím polévku.
+          - Uvařila výbornou kávu.
+
+  schön:
+    tags:
+      - example
+
+    translations:
+      - word: krásný
+        pos: adjective
+        comparison:
+          comparative: krásnější
+          superlative: nejkrásnější
+        examples:
+          - To je krásný dům.
+          - Má krásnou zahradu.
