@@ -19,5 +19,6 @@ type Translation struct {
 	Aspect   string `yaml:"aspect,omitempty"`
 	Pair     string `yaml:"pair,omitempty"`
 
+	Notes    []string `yaml:"notes,omitempty"`
 	Examples []string `yaml:"examples,omitempty"`
 }

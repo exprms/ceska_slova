@@ -43,6 +43,9 @@ ceska_slova/
 #### Markdown export
 `go run ./cmd/ceska_slova --format=markdown`
 
+#### Markdown Table export
+`go run ./cmd/ceska_slova --format=table --tag=example,example3`
+
 #### TTS mode (speech training)
 `go run ./cmd/ceska_slova --format=tts`
 

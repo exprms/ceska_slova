@@ -7,15 +7,15 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/exprms/ceska_slova/internal/model"
-	"github.com/exprms/ceska_slova/internal/loader"
-	"github.com/exprms/ceska_slova/internal/renderer"
 	"github.com/exprms/ceska_slova/internal/filter"
+	"github.com/exprms/ceska_slova/internal/loader"
+	"github.com/exprms/ceska_slova/internal/model"
+	"github.com/exprms/ceska_slova/internal/renderer"
 )
 
 func main() {
-	// 1. CLI flag definieren
-	format := flag.String("format", "cli", "cli | tts | markdown")
+	// CLI flags
+	format := flag.String("format", "cli", "cli | tts | markdown | table")
 	tag := flag.String("tag", "", "filter by tag (comma separated)")
 
 	flag.Parse()
@@ -25,14 +25,19 @@ func main() {
 		tagList = strings.Split(*tag, ",")
 	}
 
-	// 2. Daten laden
+	// 1. merged vocabulary (WICHTIG)
+	merged := model.File{
+		Vocabulary: make(map[string]model.Entry),
+	}
+
+	// 2. load files
 	files, err := filepath.Glob("data/*.yaml")
 	if err != nil {
 		fmt.Println("error:", err)
 		os.Exit(1)
 	}
 
-	// 3. Dateien verarbeiten
+	// 3. merge + filter
 	for _, file := range files {
 		f, err := loader.Load(file)
 		if err != nil {
@@ -40,31 +45,29 @@ func main() {
 			continue
 		}
 
-		// Filter anwenden
-		filtered := make(map[string]model.Entry)
-
 		for german, entry := range f.Vocabulary {
 			if filter.MatchesTag(entry, tagList) {
-				filtered[german] = entry
+				merged.Vocabulary[german] = entry
 			}
 		}
+	}
 
-		f.Vocabulary = filtered
+	// 4. render
+	switch *format {
+	case "cli":
+		renderer.PrintCLI(&merged)
 
-		// 4. Renderer auswählen
-		switch *format {
-		case "cli":
-			renderer.PrintCLI(f)
+	case "tts":
+		renderer.PrintTTS(&merged)
 
-		case "tts":
-			renderer.PrintTTS(f)
+	case "markdown":
+		renderer.PrintMarkdown(&merged)
 
-		case "markdown":
-			renderer.PrintMarkdown(f)
+	case "table":
+		renderer.PrintTable(&merged)
 
-		default:
-			fmt.Println("unknown format:", *format)
-			os.Exit(1)
-		}
+	default:
+		fmt.Println("unknown format:", *format)
+		os.Exit(1)
 	}
 }
