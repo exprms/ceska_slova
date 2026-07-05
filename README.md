@@ -7,14 +7,14 @@ A small Go-based vocabulary management tool for learning Czech vocabulary from s
 It supports multiple output formats (CLI, Markdown, TTS) and filtering by tags to enable focused learning sessions.
 
 ### 🚀 Features
-📂 Load vocabulary from YAML files
-🧩 Strongly typed Go data model
-🖥️ Multiple output formats:
-CLI (human readable)
-Markdown (notes / GitHub / Obsidian)
-TTS (spoken practice)
-🏷️ Tag-based filtering (food, lesson-7, etc.)
-🔌 Extensible renderer architecture (add new formats easily)
+- 📂 Load vocabulary from YAML files
+- 🧩 Strongly typed Go data model
+- 🖥️ Multiple output formats:
+- CLI (human readable)
+- Markdown (notes / GitHub / Obsidian)
+- TTS (spoken practice)
+- 🏷️ Tag-based filtering (food, lesson-7, etc.)
+- 🔌 Extensible renderer architecture (add new formats easily)
 
 ### Project Structure
 ```
