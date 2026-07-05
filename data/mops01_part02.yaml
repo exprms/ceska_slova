@@ -1,0 +1,229 @@
+vocabulary:
+
+  begreifen:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: chápat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já chápu
+        examples:
+          - Nechápu, jak se tohle mohlo stát.
+          - Teď už chápu.
+      - word: pochopit
+        pos: verb
+        aspect: perfective
+        notes:
+          - já pochopím
+
+  nicken, schwingen:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: kývat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já kývám
+
+  Erwachsene:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: dospělý
+        pos: adjective
+
+  beraten:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: radit
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já radím
+      - word: poradit
+        pos: verb
+        aspect: perfective
+        notes:
+          - já poradím
+
+  sich vorstellen, präsentieren:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: představit se
+        pos: verb
+        aspect: perfective
+        notes:
+          - já představím se
+      - word: představovat se
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já představuji se
+
+  schlecht:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: nanic
+        pos: adverb
+        examples:
+          - Nemám moc času, což je dost nanic.
+
+  was:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: což
+        pos: pronoun
+
+  dafür:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: zato
+        pos: adverb
+        examples:
+          - Dneska to nejde, zato zítra mám čas.
+
+  Menge:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: spousta
+        pos: noun
+        gender: feminine
+        examples:
+          - Mám spoustu práce.
+
+  beschreiben:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: popisovat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já popisuji
+        examples:
+          - To to docela dobře popisuje.
+      - word: popsat
+        pos: verb
+        aspect: perfective
+        notes:
+          - já popíši
+        examples:
+          - Popíšu ti ten problém.
+
+  suchen:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: hledat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já hledám
+
+  benutzen, verwenden:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: používat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já používám
+        examples:
+          - Snažím se nepoužívat cizí slova.
+      - word: použít
+        pos: verb
+        aspect: perfective
+        notes:
+          - já použiji
+
+  Ausdruck:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: výraz
+        pos: noun
+        gender: masculine
+
+  einfallen:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: napadnout
+        pos: verb
+        aspect: perfective
+        notes:
+          - já napadnu
+        examples:
+          - Právě mě napadlo, že zítra nemůžu přijít.
+          - Právě mě napadlo jedno řešení.
+      - word: napadat
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já napadám
+
+  schön, hübsch:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: pěkný
+        pos: adjective
+
+  versuchen, sich anstrengen:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: snažit se
+        pos: verb
+        aspect: imperfective
+        notes:
+          - já se snažím
+
+  fertig machen, schach setzen:
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: natřít to
+        pos: verb
+        aspect: perfective
+
+  einreiben (z. B. Brot):
+    tags:
+      - mops01
+      - part02
+    translations:
+      - word: natírat
+        pos: verb
+        aspect: imperfective
+      - word: natřít
+        pos: verb
+        aspect: perfective
+        notes:
+          - já natřu
